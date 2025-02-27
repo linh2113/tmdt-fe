@@ -4,7 +4,7 @@ import { Select, SelectContent, SelectGroup, SelectLabel, SelectTrigger, SelectV
 import { Input } from '@/components/ui/input'
 export default function ProfileForm() {
    const [name, setName] = useState('Nguyễn Thanh Kỳ')
-   const [phone, setPhone] = useState('01224566789')
+   const [phone, setPhone] = useState('012245667893')
    const [address, setAddress] = useState('')
    const [bio, setBio] = useState('')
    const [nickname, setNickname] = useState('')
