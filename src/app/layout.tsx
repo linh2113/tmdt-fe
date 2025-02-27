@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
 import './globals.css'
-import { ThemeProvider } from '@/components/theme-provider'
 import Header from '@/components/header'
 const manrope = Nunito({ subsets: ['latin'], variable: '--font-manrope' })
 export const metadata: Metadata = {
@@ -18,10 +17,8 @@ export default function RootLayout({
    return (
       <html lang='en' suppressHydrationWarning>
          <body className={`${manrope.className} antialiased text-sm font-normal`}>
-            <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
-               <Header />
-               <main className='container my-10'>{children}</main>
-            </ThemeProvider>
+            <Header />
+            <main className='container my-10'>{children}</main>
          </body>
       </html>
    )
