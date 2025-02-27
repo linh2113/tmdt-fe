@@ -127,7 +127,7 @@
    }
 }
 .container {
-   max-width: 1280px;
+   max-width: 1000px;
    width: 100%;
    margin-left: auto;
    margin-right: auto;
@@ -138,4 +138,10 @@ img {
    width: 100%;
    height: 100%;
    object-fit: cover;
+}
+.text-primaryColor {
+   color: #ffba00;
+}
+.bg-primaryColor {
+   background-color: #ffba00;
 }

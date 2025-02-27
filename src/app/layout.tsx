@@ -20,7 +20,7 @@ export default function RootLayout({
          <body className={`${manrope.className} antialiased text-sm font-normal`}>
             <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
                <Header />
-               <main className='container'>{children}</main>
+               <main className='container my-10'>{children}</main>
             </ThemeProvider>
          </body>
       </html>
