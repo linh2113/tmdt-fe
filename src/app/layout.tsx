@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/header'
+import Footer from '@/components/footer'
 const manrope = Nunito({ subsets: ['latin'], variable: '--font-manrope' })
 export const metadata: Metadata = {
    title: 'Chợ Tốt - Website Mua Bán, Rao Vặt Trực Tuyến Hàng Đầu Của Người Việt',
@@ -18,7 +19,8 @@ export default function RootLayout({
       <html lang='en' suppressHydrationWarning>
          <body className={`${manrope.className} antialiased text-sm font-normal`}>
             <Header />
-            <main className='container my-10'>{children}</main>
+            <main className='container my-5'>{children}</main>
+            <Footer />
          </body>
       </html>
    )
